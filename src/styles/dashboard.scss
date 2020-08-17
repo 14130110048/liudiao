@@ -1,0 +1,156 @@
+#dashboard {
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    overflow: auto;
+
+    .top {
+        height: 20px;
+        // line-height: 30px;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0;
+
+        .color {
+            width: 10px;
+            height: 20px;
+            background-color: #006d8d;
+            margin-left: 5px;
+        }
+
+        .title {
+            margin-left: 20px;
+            line-height: 20px;
+            height: 20px;
+            font-size: 18px;
+        }
+    }
+
+    .cardBox {
+        background: #ffffff;
+        text-align: center;
+        border: 1px solid #c5d1d5;
+        border-radius: 5px;
+
+        .card {
+            padding: 15px;
+            border-right: 1px solid #c5d1d5;
+
+            .name {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                justify-content: center;
+
+                .icon {
+                    width: 20px;
+                    height: 15px;
+                    // line-height: 30px;
+                    margin-top: 5px;
+                }
+
+                .font {
+                    margin-left: 8px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    overflow: hidden;
+                }
+
+                .icon-FlightCount {
+                    background: url(~@/assets/dashboard/hangban.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-PassengerCount {
+                    background: url(~@/assets/dashboard/lvke.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-DengJiLinJianBiaoCount {
+                    background: url(~@/assets/dashboard/dengji.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-KusiSuLiuDiaoBiaoCount {
+                    background: url(~@/assets/dashboard/kuailiu.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-LiuDiaoBiaoCount {
+                    background: url(~@/assets/dashboard/liudiao.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-CaiYangBiaoCount {
+                    background: url(~@/assets/dashboard/caiyang.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-ChaYanJieGuoBiaoCount {
+                    background: url(~@/assets/dashboard/jiankang.png) center center;
+                    background-size: 100% 100%;
+                }
+
+                .icon-PanDingBiaoCount {
+                    background: url(~@/assets/dashboard/panding.png) center center;
+                    background-size: 100% 100%;
+                }
+            }
+
+            .value {
+                font-size: 24px;
+                height: 35px;
+                line-height: 35px;
+            }
+
+            .value-FlightCount,
+            .value-PanDingBiaoCount {
+                color: #5ac231;
+            }
+
+            .value-PassengerCount,
+            .value-ChaYanJieGuoBiaoCount {
+                color: #f67a7a;
+            }
+
+            .value-DengJiLinJianBiaoCount,
+            .value-CaiYangBiaoCount {
+                color: #79c5ed;
+            }
+
+            .value-KusiSuLiuDiaoBiaoCount,
+            .value-LiuDiaoBiaoCount {
+                color: #f6a21e;
+            }
+        }
+
+        .rightcard {
+            border: none;
+        }
+
+        .bottom {
+            border-bottom: 1px solid #c5d1d5;
+        }
+    }
+
+    .chartBox {
+        background: #ffffff;
+        text-align: center;
+        border: 1px solid #c5d1d5;
+        border-radius: 5px;
+        padding: 15px;
+
+        p {
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0;
+        }
+
+        .chart {
+            width: 100%;
+            height: 400px;
+        }
+
+    }
+}
